@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "standard --fix && node index.js"
+    "build": "standard --fix && gulp"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,10 @@
     "url": "https://github.com/maddhruv/starter-webkit/issues"
   },
   "homepage": "https://github.com/maddhruv/starter-webkit#readme",
-  "dependencies": {
-    "commander": "^2.11.0",
-    "inquirer": "^3.3.0",
-    "request": "^2.83.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
     "standard": "^10.0.3"
   }
 }
