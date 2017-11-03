@@ -1,6 +1,5 @@
-const gulp = require('gulp');
-const pug = require('gulp-pug');
-const htmlbeautify = require('gulp-html-beautify');
+const gulp = require('gulp')
+const pug = require('gulp-pug')
 
 gulp.task('html', () => {
   return gulp.src('src/html/*.pug')
@@ -11,6 +10,14 @@ gulp.task('html', () => {
   .pipe(gulp.dest('dist/'))
 })
 
-gulp.task('default', ['html'])
+gulp.task('manifest', () => {
+  return gulp.src('src/*.json')
+  .pipe(gulp.dest('dist/'))
+})
 
-gulp.watch('src/html/*.pug', ['html'])
+gulp.task('images', () => {
+  return gulp.src('src/images/*')
+  .pipe(gulp.dest('dist/images'))
+})
+
+gulp.task('default', ['html', 'manifest', 'images'])
