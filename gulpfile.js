@@ -2,7 +2,7 @@ const gulp = require('gulp')
 const pug = require('gulp-pug')
 
 gulp.task('html', () => {
-  return gulp.src('src/html/*.pug')
+  return gulp.src('src/html/index.pug')
   .pipe(pug({
     pretty: true,
     doctype: 'html'
