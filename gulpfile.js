@@ -15,9 +15,14 @@ gulp.task('manifest', () => {
   .pipe(gulp.dest('dist/'))
 })
 
+gulp.task('bootstrap', () => {
+  gulp.src('node_modules/bootstrap/dist/css/bootstrap.css')
+  .pipe(gulp.dest('dist/css/'))
+})
+
 gulp.task('icons', () => {
   return gulp.src('src/images/icons/*')
   .pipe(gulp.dest('dist/images/icons/'))
 })
 
-gulp.task('default', ['html', 'manifest', 'icons'])
+gulp.task('default', ['html', 'manifest', 'icons', 'bootstrap'])

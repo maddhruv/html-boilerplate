@@ -20,7 +20,9 @@
     "url": "https://github.com/maddhruv/starter-webkit/issues"
   },
   "homepage": "https://github.com/maddhruv/starter-webkit#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-pug": "^3.3.0",
