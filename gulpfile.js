@@ -11,7 +11,7 @@ gulp.task('html', () => {
 })
 
 gulp.task('manifest', () => {
-  return gulp.src('src/*.json')
+  gulp.src('src/*.json')
   .pipe(gulp.dest('dist/'))
 })
 
@@ -21,8 +21,13 @@ gulp.task('bootstrap', () => {
 })
 
 gulp.task('icons', () => {
-  return gulp.src('src/images/icons/*')
+  gulp.src('src/images/icons/*')
   .pipe(gulp.dest('dist/images/icons/'))
 })
 
-gulp.task('default', ['html', 'manifest', 'icons', 'bootstrap'])
+gulp.task('serviceWorker', () => [
+  gulp.src('src/scripts/service-worker.js')
+  .pipe(gulp.dest('dist/'))
+])
+
+gulp.task('default', ['manifest', 'icons', 'bootstrap', 'serviceWorker', 'html'])

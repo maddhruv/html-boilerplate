@@ -1,6 +1,7 @@
 {
   "name": "starter-webkit",
   "version": "0.0.1",
+  "private": "true",
   "description": "Responsive, Progressive Website Boilerplate",
   "main": "index.js",
   "scripts": {
@@ -12,7 +13,11 @@
     "url": "git+https://github.com/maddhruv/starter-webkit.git"
   },
   "keywords": [
-    "website"
+    "website",
+    "html-template",
+    "html-boilerplate",
+    "pwa boilerplate",
+    "boilerplate"
   ],
   "author": "maddhruv <dhruvjainpenny@gmail.com> (https://maddhruv.github.io)",
   "license": "Apache-2.0",
