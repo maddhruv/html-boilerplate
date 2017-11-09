@@ -30,4 +30,9 @@ gulp.task('serviceWorker', () => [
   .pipe(gulp.dest('dist/'))
 ])
 
-gulp.task('default', ['manifest', 'icons', 'bootstrap', 'serviceWorker', 'html'])
+gulp.task('robots', () => {
+  gulp.src('src/robots.txt')
+  .pipe(gulp.dest('dist/'))
+})
+
+gulp.task('default', ['manifest', 'icons', 'bootstrap', 'serviceWorker', 'robots', 'html'])
