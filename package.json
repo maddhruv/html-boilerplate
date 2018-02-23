@@ -1,16 +1,15 @@
 {
   "name": "starter-webkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": "true",
   "description": "Responsive, Progressive Website Boilerplate",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "standard --fix && gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maddhruv/starter-webkit.git"
+    "url": "git+https://github.com/maddhruv/html-boilerplate.git"
   },
   "keywords": [
     "website",
@@ -22,9 +21,9 @@
   "author": "maddhruv <dhruvjainpenny@gmail.com> (https://maddhruv.github.io)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/maddhruv/starter-webkit/issues"
+    "url": "https://github.com/maddhruv/html-boilerplate/issues"
   },
-  "homepage": "https://github.com/maddhruv/starter-webkit#readme",
+  "homepage": "https://github.com/maddhruv/html-boilerplate#readme",
   "dependencies": {
     "bootstrap": "^3.3.7"
   },
