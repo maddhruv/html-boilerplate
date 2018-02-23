@@ -1,8 +1,6 @@
 # html-boilerplate
 Responsive, Progressive Website Boilerplate with Basic Service Worker :dizzy: and Bootstrap :boom:
 
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/maddhruv/html-boilerplate/releases)
-
 ## How to?
 - change the current working directory to your newly created website
 
